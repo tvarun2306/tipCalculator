@@ -1,0 +1,116 @@
+*{
+    box-sizing: border-box;
+ }
+
+body{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-image: url(https://www.dreamstime.com/illustration/fast-food-wallpaper.html);
+    background-color: bisque;
+    padding-top: 50px;
+}
+
+
+.container{
+    height: 80vh;
+    width: 80vw;
+    background-image: url(https://img.freepik.com/free-vector/cartoon-food-court-interior_52683-66181.jpg?w=1380&t=st=1662190193~exp=1662190793~hmac=b368994d241a6eec17696f6cc825546d1a5db828cc5e351a2bae8b946e354bc5);
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 20% 50% 30%;
+    grid-template-areas: "header " "main" "footer";
+    padding: 10px;
+    /* margin-top: 40px;
+    margin-left: 130px; */
+    border-radius: 15px;
+}
+
+.header{
+    grid-area: header;
+    text-align: center;
+    margin:10px;
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.main{
+    grid-area: main;
+    display:flex;
+    flex-direction: row;
+    
+    text-align: center;
+    justify-content: space-around;
+    margin:10px;
+}
+.calc{
+    height: 35px;
+    width: 25px;
+    margin:5px;
+    
+}
+.bill{
+    width:30vw;
+    text-align: center;
+    background-color: cornsilk;
+    opacity: 80%;   
+    border-radius: 15px;
+}
+.people{
+    width:30vw;
+    text-align: center;
+    width:30vw;
+    text-align: center;
+    background-color: rgb(206, 251, 115);
+    opacity: 80%;
+    border-radius: 15px;
+
+}
+.tip{
+    width:30vw;
+    text-align: center;
+    background-color: rgb(237, 176, 84);
+    opacity: 80%;
+    border-radius: 15px;
+
+}
+
+.footer{
+    grid-area: footer;
+    text-align: center;
+    background-color: rgb(139, 227, 215);
+    opacity: 80%;
+    border-radius: 20px;
+    margin:10px;
+    display: grid;
+    grid-template-columns: 35% 35% 30%;
+    grid-template-rows: 50% 50%;
+    grid-template-areas: "totalTip contryPerHead final" "ans contry final";
+
+    
+    
+
+}
+
+.totalTip{
+     grid-area:totalTip ;
+        
+}
+.contryPerHead{
+    grid-area: contryPerHead;
+}
+.final{
+    grid-area: final;
+    
+}
+
+.ans{
+    grid-area: ans;
+}
+.contry{
+    grid-area: contry;
+}
